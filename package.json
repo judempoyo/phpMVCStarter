@@ -1,0 +1,19 @@
+{
+  "name": "kongb",
+  "version": "1.0.0",
+  "description": "application de gestion d'un studio photo",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \" Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "studio"
+  ],
+  "author": "\"jude mpoyo\"",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "animate.css": "^4.1.1",
+    "tailwindcss": "^4.0.9"
+  }
+}
