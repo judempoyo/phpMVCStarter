@@ -19,13 +19,13 @@
         </div>
 
         <div class="space-y-4">
-            <a href="<?= PUBLIC_URL ?>" 
+            <a href="<?= url('/') ?>" 
                class="inline-block px-6 py-3 font-bold text-white transition duration-300 bg-red-500 rounded-lg dark:bg-red-600 hover:bg-red-600 dark:hover:bg-red-700">
                 ← Retour à l'accueil
             </a>
             <p class="mt-4 text-zinc-500 dark:text-zinc-400">
                 Besoin d'aide ? Contactez-nous à  
-                <a href="mailto:support@kongb.local" class="text-red-500 dark:text-red-400 hover:underline">support@kongb.local</a>
+                <a href="mailto:<?= $appSupportMail ?>" class="text-red-500 dark:text-red-400 hover:underline"><?= $appSupportMail ?></a>
             </p>
         </div>
     </div>

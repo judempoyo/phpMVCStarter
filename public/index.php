@@ -6,6 +6,7 @@ require_once __DIR__ . '/../app/config/bootstrap.php';
 require_once __DIR__ . '/../app/helpers/functions.php';
 require_once __DIR__ . '/../app/routes/routes.php';
 
+
 use FastRoute\Dispatcher;
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];

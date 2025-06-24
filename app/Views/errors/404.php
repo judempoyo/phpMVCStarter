@@ -18,12 +18,12 @@
         </div>
 
         <div class="space-y-4">
-            <a href="<?= PUBLIC_URL ?>" 
+            <a href="<?= url('/') ?>" 
                class="inline-block px-6 py-3 font-bold text-white transition duration-300 bg-teal-500 rounded-lg dark:bg-teal-600 hover:bg-teal-600 dark:hover:bg-teal-700">
                 ← Retour à l'accueil
             </a>
             <p class="mt-4 text-zinc-500 dark:text-zinc-400">
-                Ou contactez-nous à <a href="mailto:Bojo45@gmail.com" class="text-teal-500 dark:text-teal-400 hover:underline">support@kongb.local</a>
+                Ou contactez-nous à <a href="mailto:<?= $appSupportMail ?>" class="text-teal-500 dark:text-teal-400 hover:underline"><?= $appSupportMail ?></a>
             </p>
         </div>
     </div>
