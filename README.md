@@ -8,6 +8,10 @@ Un projet de base MVC en PHP moderne avec authentification complète et Tailwind
 ![MVC](https://img.shields.io/badge/Architecture-MVC-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ## 🎨 Preview 
+![Screenshot from 2025-06-24 18-22-35](https://github.com/user-attachments/assets/3baf8da5-0893-433a-812c-d235355b81a6)
+![Screenshot from 2025-06-24 18-24-22](https://github.com/user-attachments/assets/c75f16b7-cfc0-4720-97bd-b240cf7516b7)
+![Screenshot from 2025-06-24 18-24-57](https://github.com/user-attachments/assets/ff0568a8-b53a-4259-86aa-28478cbf1b32)
+![Screenshot from 2025-06-24 18-23-17](https://github.com/user-attachments/assets/5f279f8c-1e58-46ce-a0be-6bb1c3b36caa)
 
 
 
