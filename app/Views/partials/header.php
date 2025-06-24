@@ -5,7 +5,7 @@
         <button class="md:hidden text-zinc-500 dark:text-zinc-400">
             <i class="fas fa-bars text-xl"></i>
         </button>
-        <h2 class="ml-4 text-xl font-semibold text-zinc-800 dark:text-zinc-200"><?= $title ?? 'PHPMVCStarter' ?></h2>
+        <h2 class="ml-4 text-xl font-semibold text-zinc-800 dark:text-zinc-200"><?= env('APP_TITLE', 'PHPMVCStarter') ?></h2>
     </div>
     <div class="flex items-center space-x-4">
         <button class="p-2 dark:text-white bg-white dark:bg-zinc-700  rounded-full top-2 md:top-5 right-3 md:right-20 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-transform transform hover:scale-110 z-50">

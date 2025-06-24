@@ -10,7 +10,7 @@
   rel="stylesheet"
   href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
 />
-    <title> <?= env('APP_TITLE', 'Mon Application') ?></title>
+    <title> <?= env('APP_TITLE', 'PHPMVCStarter') ?></title>
 </head>
 
 <body class="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-white ">
@@ -33,7 +33,7 @@
 
 
 
-    <script src="<?= PUBLIC_URL ?>js/main.js"></script>
+    <script src="/js/main.js"></script>
 
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
 </body>

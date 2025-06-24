@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= PUBLIC_URL?>css/output.css" rel="stylesheet">
+    <link href="/css/output.css" rel="stylesheet">
 
-    <title> <?= htmlspecialchars($title) ?? 'KONGB' ?></title>
+    <title><?= env('APP_TITLE', 'PHPMVCStarter') ?></title>
 </head>
 <body class="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-white ">
 
@@ -17,6 +17,6 @@
     <main class="container mx-auto p-4 min-h-screen items-center place-content-center justify-center">
         <?= $content ?>
     </main>
-<script src="<?= PUBLIC_URL?>js/main.js"></script> 
+<script src="/js/main.js"></script> 
 </body>
 </html>
