@@ -25,29 +25,12 @@
 
             <?= $content ?>
 
-            <!-- Bouton Retour (conditionnel) -->
-            <?php
-            $currentRoute = $_SERVER['REQUEST_URI'];
-
-            $hideBackButton = in_array($currentRoute, [
-                '/Projets/KongB/public/dashboard',
-                '/Projets/KongB/public/customer',
-                '/Projets/KongB/public/booking',
-            ]);
-
-            if (!$hideBackButton): ?>
-                <button onclick="goBack() "
-                    class="mb-4 mt-4 p-2 bg-teal-500 text-white rounded-lg cursor-pointer hover:bg-teal-600">
-                    Retour
-                </button>
-            <?php endif ?>
-
-
+           
         </main>
+        <?php include __DIR__ . '/../partials/footer.php'; ?>
     </div>
 </div>
 
-    <?php include __DIR__ . '/../partials/footer.php'; ?>
 
 
     <script src="<?= PUBLIC_URL ?>js/main.js"></script>
