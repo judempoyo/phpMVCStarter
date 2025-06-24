@@ -7,14 +7,25 @@ Un projet de base MVC en PHP moderne avec authentification complète et Tailwind
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwind-css)
 ![MVC](https://img.shields.io/badge/Architecture-MVC-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue)
-## 🎨 Preview 
-![Screenshot from 2025-06-24 18-22-35](https://github.com/user-attachments/assets/3baf8da5-0893-433a-812c-d235355b81a6)
-![Screenshot from 2025-06-24 18-24-22](https://github.com/user-attachments/assets/c75f16b7-cfc0-4720-97bd-b240cf7516b7)
-![Screenshot from 2025-06-24 18-24-57](https://github.com/user-attachments/assets/ff0568a8-b53a-4259-86aa-28478cbf1b32)
-![Screenshot from 2025-06-24 18-23-17](https://github.com/user-attachments/assets/5f279f8c-1e58-46ce-a0be-6bb1c3b36caa)
 
+## 🎨 Aperçu de l'interface
 
+<div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  <img src="https://github.com/user-attachments/assets/3baf8da5-0893-433a-812c-d235355b81a6" alt="Page d'accueil" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/c75f16b7-cfc0-4720-97bd-b240cf7516b7" alt="Mode sombre" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/ff0568a8-b53a-4259-86aa-28478cbf1b32" alt="Formulaire de connexion" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/5f279f8c-1e58-46ce-a0be-6bb1c3b36caa" alt="Tableau de bord" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+</div>
 
+<details>
+<summary>📱 Compatibilité mobile</summary>
+
+Les interfaces sont entièrement responsives et s'adaptent à tous les appareils :
+- Téléphones (≥375px)
+- Tablettes (≥768px)
+- Desktop (≥1024px)
+
+</details>
 ## Fonctionnalités principales
 
 - **Architecture MVC** propre et modulaire
