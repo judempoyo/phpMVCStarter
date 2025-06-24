@@ -23,7 +23,7 @@
                 ← Retour à l'accueil
             </a>
             <p class="mt-4 text-zinc-500 dark:text-zinc-400">
-                Ou contactez-nous à <a href="mailto:<?= $appSupportMail ?>" class="text-teal-500 dark:text-teal-400 hover:underline"><?= $appSupportMail ?></a>
+                Ou contactez-nous à <a href="mailto:<?= env('SUPPORT_MAIL', 'support@example.com') ?>" class="text-teal-500 dark:text-teal-400 hover:underline"><?= env('SUPPORT_MAIL', 'support@example.com') ?></a>
             </p>
         </div>
     </div>

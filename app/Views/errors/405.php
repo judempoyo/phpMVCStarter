@@ -25,7 +25,7 @@
             </a>
             <p class="mt-4 text-zinc-500 dark:text-zinc-400">
                 Besoin d'aide ? Contactez-nous à  
-                <a href="mailto:<?= $appSupportMail ?>" class="text-red-500 dark:text-red-400 hover:underline"><?= $appSupportMail ?></a>
+                <a href="mailto:<?= env('SUPPORT_MAIL', 'support@example.com') ?>" class="text-red-500 dark:text-red-400 hover:underline"><?= env('SUPPORT_MAIL', 'support@example.com') ?></a>
             </p>
         </div>
     </div>
