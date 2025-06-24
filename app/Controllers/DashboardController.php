@@ -31,7 +31,7 @@ class DashboardController
 
         $user = User::find($this->session->get('user'));
 
-        $this->render('app', 'dashboard', $user);
+        $this->render('app', 'dashboard');
     }
 
 

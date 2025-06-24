@@ -1,11 +1,11 @@
-<!-- Header -->
+
 <header
     class="flex items-center justify-between px-6 py-4 bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
     <div class="flex items-center ml-8">
         <button class="md:hidden text-gray-500 dark:text-gray-400">
             <i class="fas fa-bars text-xl"></i>
         </button>
-        <h2 class="ml-4 text-xl font-semibold text-gray-800 dark:text-gray-200"><?= $title ?? 'KongB' ?></h2>
+        <h2 class="ml-4 text-xl font-semibold text-gray-800 dark:text-gray-200"><?= $title ?? 'PHPMVCStarter' ?></h2>
     </div>
     <div class="flex items-center space-x-4">
         <button class="p-2 dark:text-white bg-white dark:bg-gray-700  rounded-full top-2 md:top-5 right-3 md:right-20 hover:bg-gray-100 dark:hover:bg-gray-700 transition-transform transform hover:scale-110 z-50">
