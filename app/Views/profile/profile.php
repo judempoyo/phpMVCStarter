@@ -1,11 +1,8 @@
 <div class="max-w-2xl mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden dark:bg-zinc-800 dark:shadow-zinc-900/50">
-    <!-- En-tête avec photo de profil -->
     <div class="bg-gradient-to-r from-teal-500 to-zinc-600 p-6 text-white dark:from-teal-600 dark:to-zinc-700">
         <div class="flex items-center space-x-4">
             <div class="relative">
-               <!--  <img class="h-16 w-16 rounded-full border-4 border-white/30 object-cover dark:border-zinc-800/30" 
-                     src="https://ui-avatars.com/api/?name=<?= urlencode($user->name) ?>&background=random" 
-                     alt="Photo de profil"> -->
+              
                      <div class="h-16 w-16 rounded-full border-4 border-white/30 bg-zinc-50 dark:border-zinc-800/30 place-content-center justify-center items-center">
                         <h2 class="text-center text-3xl font-bold text-teal-700 "><?= $user->initials()?></h2>
                      </div>
@@ -17,10 +14,8 @@
             </div>
         </div>
     </div>
-    
-    <!-- Contenu principal -->
-    <div class="p-6 space-y-6 dark:p-6">
-        <!-- Messages d'erreur/succès -->
+
+    <div class="p-4 space-y-4 dark:p-6">
         <?php if (!empty($errors)): ?>
             <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded mb-4 dark:bg-red-900/30 dark:border-red-400">
                 <?php foreach ($errors as $error): ?>
@@ -36,7 +31,6 @@
             <?php $this->session->remove('success'); ?>
         <?php endif; ?>
 
-        <!-- Section Informations personnelles -->
         <div class="bg-zinc-50 dark:bg-zinc-700/30 p-5 rounded-lg border border-zinc-100 dark:border-zinc-600/50">
             <h2 class="text-xl font-semibold mb-4 text-zinc-800 dark:text-zinc-200 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 dark:text-zinc-300" viewBox="0 0 20 20" fill="currentColor">
@@ -46,7 +40,7 @@
             </h2>
             
             <form action="<?= PUBLIC_URL ?>profile/update-info" method="POST">
-                <div class="space-y-4">
+                <div class="space-y-2">
                     <div>
                         <label class="block text-sm font-medium text-zinc-700 mb-1 dark:text-zinc-300">Nom complet</label>
                         <input type="text" name="name" required
@@ -72,7 +66,6 @@
             </form>
         </div>
 
-        <!-- Section Mot de passe -->
         <div class="bg-zinc-50 dark:bg-zinc-700/30 p-5 rounded-lg border border-zinc-100 dark:border-zinc-600/50">
             <h2 class="text-xl font-semibold mb-4 text-zinc-800 dark:text-zinc-200 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 dark:text-zinc-300" viewBox="0 0 20 20" fill="currentColor">
@@ -82,7 +75,7 @@
             </h2>
             
             <form action="<?= PUBLIC_URL ?>profile/update-password" method="POST">
-                <div class="space-y-4">
+                <div class="space-y-2">
                     <div>
                         <label class="block text-sm font-medium text-zinc-700 mb-1 dark:text-zinc-300">Mot de passe actuel</label>
                         <input type="password" name="current_password" required
@@ -112,7 +105,7 @@
             </form>
         </div>
 
-        <!-- Section Danger -->
+   
         <div class="bg-red-50 dark:bg-red-900/10 p-5 rounded-lg border border-red-100 dark:border-red-900/50">
             <h2 class="text-xl font-semibold mb-4 text-red-800 dark:text-red-200 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 dark:text-red-300" viewBox="0 0 20 20" fill="currentColor">
@@ -136,7 +129,6 @@
     </div>
 </div>
 
-<!-- Inclure le modal pour la suppression du compte -->
 <?php
 $modalParams = [
     'modalId' => 'deleteAccountModal',
