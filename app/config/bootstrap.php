@@ -1,11 +1,21 @@
 <?php
 
 require_once dirname(__DIR__) . '/../vendor/autoload.php';
+require_once dirname(__DIR__) . '/helpers/functions.php';
 
 
 define('BASE_PATH', realpath(__DIR__ . '/..'));
 define('PUBLIC_PATH', BASE_PATH . '/public/');
-define('PUBLIC_URL', 'http://jump.localhost/Projets/KongB/public/');
+
+
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$scriptName = dirname($_SERVER['SCRIPT_NAME']);
+
+
+$baseUrl = rtrim(str_replace('\\', '/', $scriptName), '/');
+define('PUBLIC_URL', $protocol . $host . $baseUrl . '/');
+
 
 use Illuminate\Pagination\Paginator;
 use Illuminate\Database\Capsule\Manager as Capsule;

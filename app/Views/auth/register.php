@@ -1,10 +1,9 @@
 <div class="max-w-md mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden dark:bg-gray-800 dark:shadow-gray-900/50">
-    <!-- En-tête avec dégradé -->
     <div class="bg-gradient-to-r from-teal-500 to-gray-600 p-6 text-white dark:from-teal-600 dark:to-gray-700">
         <h1 class="text-2xl font-bold text-center dark:text-gray-100">Créer un compte</h1>
     </div>
 
-    <!-- Contenu -->
+
     <div class="p-6">
         <?php if (!empty($errors)): ?>
             <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded mb-4 dark:bg-red-900/30 dark:border-red-400">
@@ -14,7 +13,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?= PUBLIC_URL ?>register" method="POST" class="space-y-5">
+        <form action="<?=  url('/register')  ?>" method="POST" class="space-y-5">
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Nom complet</label>
                 <input type="text" name="name" required
@@ -53,7 +52,7 @@
         <div class="mt-6 text-center">
             <p class="text-sm text-gray-600 dark:text-gray-400">
                 Déjà inscrit ? 
-                <a href="<?= PUBLIC_URL ?>login" class="text-teal-600 hover:underline dark:text-teal-400">Se connecter</a>
+                <a href="<?=  url('/login')  ?>" class="text-teal-600 hover:underline dark:text-teal-400">Se connecter</a>
             </p>
         </div>
     </div>

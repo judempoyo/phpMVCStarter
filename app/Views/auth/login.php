@@ -1,10 +1,8 @@
 <div class="max-w-md mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden dark:bg-gray-800 dark:shadow-gray-900/50">
-    <!-- En-tête avec dégradé -->
     <div class="bg-gradient-to-r from-teal-500 to-gray-600 p-6 text-white dark:from-teal-600 dark:to-gray-700">
         <h1 class="text-2xl font-bold text-center dark:text-gray-100">Connexion</h1>
     </div>
 
-    <!-- Contenu -->
     <div class="p-6">
         <?php if ($error): ?>
             <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded mb-4 dark:bg-red-900/30 dark:border-red-400">
@@ -12,7 +10,7 @@
             </div>
         <?php endif; ?>
 
-        <form action="<?= PUBLIC_URL ?>login" method="POST" class="space-y-5">
+        <form action="<?=  url('/login')  ?>" method="POST" class="space-y-5">
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Adresse email</label>
                 <input type="email" name="email" required
@@ -37,12 +35,12 @@
         <div class="mt-6 text-center space-y-3">
             <p class="text-sm text-gray-600 dark:text-gray-400">
                 Mot de passe oublié ? 
-                <a href="<?= PUBLIC_URL ?>forgot-password" class="text-teal-600 hover:underline dark:text-teal-400">Réinitialiser</a>
+                <a href="<?=  url('/forgot-password')  ?>" class="text-teal-600 hover:underline dark:text-teal-400">Réinitialiser</a>
             </p>
-           <!--  <p class="text-sm text-gray-600 dark:text-gray-400">
+           <p class="text-sm text-gray-600 dark:text-gray-400">
                 Pas de compte ? 
-                <a href="<?= PUBLIC_URL ?>register" class="text-teal-600 hover:underline dark:text-teal-400">S'inscrire</a>
-            </p> -->
+                <a href="<?=  url('/register')  ?>" class="text-teal-600 hover:underline dark:text-teal-400">S'inscrire</a>
+            </p> 
         </div>
     </div>
 </div>

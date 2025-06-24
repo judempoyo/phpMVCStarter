@@ -11,21 +11,18 @@ class USerController
     use ViewRenderer;
     
     protected $session;
-    protected $basePath;
 
     public function __construct()
     {
         $this->session = new SessionManager();
         $this->session->start();
-        $this->basePath = '/Projets/KongB/public';
     }
 
     public function showProfile()
     {
         if (!$this->session->has('user')) {
             $this->session->set('error', 'Vous devez être connecté pour accéder au profil.');
-            header('Location: ' . $this->basePath . '/login');
-            exit();
+             redirect('/login');
         }
     
         $user = User::find($this->session->get('user'));
@@ -43,8 +40,7 @@ class USerController
 {
     if (!$this->session->has('user')) {
         $this->session->set('error', 'Vous devez être connecté pour modifier votre profil.');
-        header('Location: ' . $this->basePath . '/login');
-        exit();
+         redirect('/login');
     }
 
     $userId = $this->session->get('user');
@@ -58,8 +54,7 @@ class USerController
     if (!empty($errors)) {
         $this->session->set('errors', $errors);
         $this->session->set('old', $data);
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     }
 
     try {
@@ -69,12 +64,10 @@ class USerController
         $user->save();
 
         $this->session->set('success', 'Vos informations ont été mises à jour avec succès.');
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     } catch (Exception $e) {
         $this->session->set('error', 'Une erreur s\'est produite lors de la mise à jour de vos informations.');
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     }
 }
 
@@ -101,8 +94,7 @@ public function updateProfilePassword()
 {
     if (!$this->session->has('user')) {
         $this->session->set('error', 'Vous devez être connecté pour modifier votre mot de passe.');
-        header('Location: ' . $this->basePath . '/login');
-        exit();
+         redirect('/login');
     }
 
     $userId = $this->session->get('user');
@@ -116,8 +108,7 @@ public function updateProfilePassword()
 
     if (!empty($errors)) {
         $this->session->set('errors', $errors);
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     }
 
     try {
@@ -125,20 +116,17 @@ public function updateProfilePassword()
 
         if (!password_verify($data['current_password'], $user->password)) {
             $this->session->set('error', 'Le mot de passe actuel est incorrect.');
-            header('Location: ' . $this->basePath . '/profile');
-            exit();
+            redirect('/profile');
         }
 
         $user->password = password_hash($data['new_password'], PASSWORD_DEFAULT);
         $user->save();
 
         $this->session->set('success', 'Votre mot de passe a été mis à jour avec succès.');
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     } catch (Exception $e) {
         $this->session->set('error', 'Une erreur s\'est produite lors de la mise à jour de votre mot de passe.');
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     }
 }
 
@@ -164,8 +152,7 @@ public function deleteProfile()
 {
     if (!$this->session->has('user')) {
         $this->session->set('error', 'Vous devez être connecté pour supprimer votre compte.');
-        header('Location: ' . $this->basePath . '/login');
-        exit();
+         redirect('/login');
     }
 
     $userId = $this->session->get('user');
@@ -174,27 +161,20 @@ public function deleteProfile()
     try {
         $user = User::find($userId);
 
-        // Vérifier le mot de passe
         if (!password_verify($password, $user->password)) {
             $this->session->set('error', 'Le mot de passe est incorrect.');
-            header('Location: ' . $this->basePath . '/profile');
-            exit();
+            redirect('/profile');
         }
 
-        // Supprimer l'utilisateur
         $user->delete();
 
-        // Déconnecter l'utilisateur
         $this->session->destroy();
 
-        // Rediriger vers la page d'accueil avec un message de succès
         $this->session->set('success', 'Votre compte a été supprimé avec succès.');
-        header('Location: ' . $this->basePath . '/');
-        exit();
+         redirect('/');
     } catch (Exception $e) {
         $this->session->set('error', 'Une erreur s\'est produite lors de la suppression de votre compte.');
-        header('Location: ' . $this->basePath . '/profile');
-        exit();
+         redirect('/profile');
     }
 }
 }
