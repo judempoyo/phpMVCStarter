@@ -11,9 +11,9 @@ Un projet de base MVC en PHP moderne avec authentification complète et Tailwind
 ## 🎨 Aperçu de l'interface
 
 <div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <img src="https://github.com/user-attachments/assets/3baf8da5-0893-433a-812c-d235355b81a6" alt="Page d'accueil" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/c75f16b7-cfc0-4720-97bd-b240cf7516b7" alt="Mode sombre" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="https://github.com/user-attachments/assets/ff0568a8-b53a-4259-86aa-28478cbf1b32" alt="Formulaire de connexion" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/3baf8da5-0893-433a-812c-d235355b81a6" alt="Formulaire de connexion" style="width: 50%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/c75f16b7-cfc0-4720-97bd-b240cf7516b7" alt="Profile" style="width: 50%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="https://github.com/user-attachments/assets/ff0568a8-b53a-4259-86aa-28478cbf1b32" alt="Tableau de bord mode sombre" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <img src="https://github.com/user-attachments/assets/5f279f8c-1e58-46ce-a0be-6bb1c3b36caa" alt="Tableau de bord" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 </div>
 
