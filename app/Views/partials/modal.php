@@ -14,22 +14,22 @@ $includePasswordField = $includePasswordField ?? false;
 
 <!-- Modal de confirmation -->
 <div id="<?= $modalId ?>" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
-    <div class="bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800">
-        <h2 class="text-xl font-bold mb-4 text-gray-900 dark:text-gray-100"><?= $modalTtitle ?></h2>
-        <p class="mb-6 text-gray-700 dark:text-gray-300"><?= $message ?></p>
+    <div class="bg-white p-6 rounded-lg shadow-lg dark:bg-zinc-800">
+        <h2 class="text-xl font-bold mb-4 text-zinc-900 dark:text-zinc-100"><?= $modalTtitle ?></h2>
+        <p class="mb-6 text-zinc-700 dark:text-zinc-300"><?= $message ?></p>
         
         <form id="<?= $modalId ?>Form" action="<?= $formAction ?>" method="POST">
             <?php if ($includePasswordField): ?>
                 <div class="mb-4">
-                    <label class="block text-gray-700 mb-2 dark:text-gray-300">Mot de passe</label>
+                    <label class="block text-zinc-700 mb-2 dark:text-zinc-300">Mot de passe</label>
                     <input type="password" name="password" required
-                           class="w-full px-3 py-2 border rounded dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100">
+                           class="w-full px-3 py-2 border rounded dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-100">
                 </div>
             <?php endif; ?>
             
             <div class="flex justify-end space-x-4">
                 <button type="button" onclick="closeModal('<?= $modalId ?>')"
-                        class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800">
+                        class="bg-zinc-500 text-white px-4 py-2 rounded hover:bg-zinc-600 dark:bg-zinc-700 dark:hover:bg-zinc-800">
                     <?= $cancelText ?>
                 </button>
                 <button type="submit"

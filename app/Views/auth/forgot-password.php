@@ -1,6 +1,6 @@
-<div class="max-w-md mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden dark:bg-gray-800 dark:shadow-gray-900/50">
-    <div class="bg-gradient-to-r from-teal-500 to-gray-600 p-6 text-white dark:from-teal-600 dark:to-gray-700">
-        <h1 class="text-2xl font-bold text-center dark:text-gray-100">Mot de passe oublié</h1>
+<div class="max-w-md mx-auto my-10 bg-white rounded-xl shadow-md overflow-hidden dark:bg-zinc-800 dark:shadow-zinc-900/50">
+    <div class="bg-gradient-to-r from-teal-500 to-zinc-600 p-6 text-white dark:from-teal-600 dark:to-zinc-700">
+        <h1 class="text-2xl font-bold text-center dark:text-zinc-100">Mot de passe oublié</h1>
     </div>
 
     <div class="p-6">
@@ -12,9 +12,9 @@
 
         <form action="<?= url('/forgot-password')  ?>" method="POST" class="space-y-5">
             <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-300">Adresse email</label>
+                <label class="block text-sm font-medium text-zinc-700 mb-1 dark:text-zinc-300">Adresse email</label>
                 <input type="email" name="email" required
-                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-200 focus:border-teal-500 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 dark:focus:ring-teal-500/50">
+                       class="w-full px-4 py-3 rounded-lg border border-zinc-300 focus:ring-2 focus:ring-teal-200 focus:border-teal-500 dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-100 dark:focus:ring-teal-500/50">
             </div>
             
             <button type="submit" 

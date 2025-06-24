@@ -1,13 +1,13 @@
 <?php ob_start() ?>
-<div class="flex items-center justify-center min-h-screen bg-gray-200 dark:bg-gray-900">
-    <div class="max-w-2xl p-8 text-center transition-colors duration-300 bg-white rounded-lg shadow-xl dark:bg-gray-800">
+<div class="flex items-center justify-center min-h-screen bg-zinc-200 dark:bg-zinc-900">
+    <div class="max-w-2xl p-8 text-center transition-colors duration-300 bg-white rounded-lg shadow-xl dark:bg-zinc-800">
         <div class="mb-6">
             <span class="font-bold text-yellow-500 text-9xl dark:text-yellow-400">503</span>
-            <h1 class="mt-4 text-4xl font-bold text-gray-800 dark:text-gray-200">Service indisponible</h1>
+            <h1 class="mt-4 text-4xl font-bold text-zinc-800 dark:text-zinc-200">Service indisponible</h1>
         </div>
         
         <div class="mb-8">
-            <p class="mb-4 text-xl text-gray-600 dark:text-gray-400">
+            <p class="mb-4 text-xl text-zinc-600 dark:text-zinc-400">
                 Oups ! Notre service est actuellement indisponible. Veuillez réessayer plus tard.
             </p>
             <div class="animate-bounce">
@@ -22,7 +22,7 @@
                class="inline-block px-6 py-3 font-bold text-white transition duration-300 bg-yellow-500 rounded-lg dark:bg-yellow-600 hover:bg-yellow-600 dark:hover:bg-yellow-700">
                 ← Retour à l'accueil
             </a>
-            <p class="mt-4 text-gray-500 dark:text-gray-400">
+            <p class="mt-4 text-zinc-500 dark:text-zinc-400">
                 Revenez plus tard ou contactez-nous à  
                 <a href="mailto:support@kongb.local" class="text-yellow-500 dark:text-yellow-400 hover:underline">support@kongb.local</a>
             </p>

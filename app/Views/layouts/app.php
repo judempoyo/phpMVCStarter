@@ -13,7 +13,7 @@
     <title> <?= htmlspecialchars($title) ?? 'KONGB' ?></title>
 </head>
 
-<body class="bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-white ">
+<body class="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-white ">
 <div class="flex h-full">
  
     <?php include __DIR__ . '/../partials/sidebar.php'; ?>
